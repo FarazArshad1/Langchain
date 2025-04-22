@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "length_input",
+        "paper_input",
+        "style_input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "Please summarize the research paper titled \"{paper_input}\" with the following specifications:\n    Explanation Style: {style_input}\n    Length of Explanation: {length_input}\n    \n    1. Mathematical Details:\n        - Include any relevant mathematical equations or concepts if present in paper.\n        - Explain the mathematical concepts using simple, intuctive code snippets where\n        applicable.\n    2. Analogies:\n        - Provide analogies to help understand the concepts.\n    \n    If Cerain concepts are not present in the paper, respond with: \"Insufficient Information available\" instead pf guessing.\n    Ensure the summary is clear, concise, and easy to understand for someone with a basic understanding of the topic and aligned with the provided style and length.\n    ",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
