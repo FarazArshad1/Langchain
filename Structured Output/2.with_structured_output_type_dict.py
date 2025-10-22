@@ -10,7 +10,7 @@ model = ChatOpenAI()
 # Review
 class Review(TypedDict):
     summary: Annotated[str, "A brief funny summary of the review"]
-    sentiment: Annotated[Literal["pos","neg"], "Retuen sentiment of the review either neagtive, positive or neutral"]
+    sentiment: Annotated[Literal["pos","neg"], "Return sentiment of the review either neagtive, positive or neutral"]
     key_themes: Annotated[list[str],"Write down all the key themes discussed in the review"]
     pros: Annotated[Optional[list[str]],"Write down all the pros inside a list"]
     cons: Annotated[Optional[list[str]],"Write down all the cons inside a list"]
