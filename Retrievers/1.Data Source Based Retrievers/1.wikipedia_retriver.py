@@ -8,14 +8,15 @@ retriver = WikipediaRetriever(
 )
 
 # Define query
-query = "the geopolitical history of india and pakistan from the perspective of a chinese"
+query = (
+    "the geopolitical history of india and pakistan from the perspective of a chinese"
+)
 
 
 # Get relevant wikipedia documents
 docs = retriver.invoke(query)
 
-#Print retrieved content
+# Print retrieved content
 for i, docs in enumerate(docs):
     print(f"\n------ Result{i+1}------")
-    print(f"Content:\n{docs.page_content}.....") #truncate display
-
+    print(f"Content:\n{docs.page_content}.....")  # truncate display
